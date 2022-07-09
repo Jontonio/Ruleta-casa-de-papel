@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La cas de papel</title>
+    <script src="libs/TweenMax.min.js"></script>
+    <script src="libs/Winwheel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="bootstrap-5.2.0/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.0/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="mask-ruleta">
+            <img class="img-mask" 
+                 src="assets/img/mascara-casa-de-papel.png" 
+                 alt="Mascara de la casa de papel" srcset=""
+                 onclick="objRuleta.startAnimation();bigButton.disabled = true;">
+        </div>
+        <div class="content-canvas" id="canvasContainer">
+            <canvas id='Ruleta' width='550' height='550'>
+            Canvas not supported, use another browser.
+            </canvas> 
+        </div>
+        </div>
+    </div>
+</body>
+</html>

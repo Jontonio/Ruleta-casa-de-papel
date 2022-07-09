@@ -1,0 +1,32 @@
+/* estilo general  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilo general para el canvas */
+.canvas{
+    height:550px;
+    width: 550px;
+}
+/* Contenedor principal al canvas */
+.content-canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100vh !important;
+}
+/* contenedor de la mascara  */
+.mask-ruleta{
+    position: absolute;
+    width: 98%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* imagen de la mascara de la casa de papel */
+.img-mask{
+    width: 110px;
+    cursor: pointer;
+}
