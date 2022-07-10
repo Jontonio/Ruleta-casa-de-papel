@@ -4,28 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La cas de papel</title>
-    <script src="libs/TweenMax.min.js"></script>
-    <script src="libs/Winwheel.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="bootstrap-5.2.0/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>La casa de papel</title>
     <link rel="stylesheet" href="bootstrap-5.2.0/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
+
+    <script src="libs/TweenMax.min.js"></script>
+    <script src="libs/Winwheel.min.js"></script>
+    <script src="bootstrap-5.2.0/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="mask-ruleta">
-            <img class="img-mask" 
-                 src="assets/img/mascara-casa-de-papel.png" 
-                 alt="Mascara de la casa de papel" srcset=""
-                 onclick="objRuleta.startAnimation();bigButton.disabled = true;">
+    <div class="main">
+        <div class="content-title">
+            <b><p class="title">LA CASA <span class="middle-text">DE</span> PAPEL</p></b>
         </div>
-        <div class="content-canvas" id="canvasContainer">
-            <canvas id='Ruleta' width='550' height='550'>
-            Canvas not supported, use another browser.
-            </canvas> 
+        <div class="content-main">
+            <div class="mask-ruleta">
+                <img class="img-mask" 
+                     src="assets/img/mascara-casa-de-papel.png" 
+                     alt="Mascara de la casa de papel" srcset=""
+                     onclick="start()">
+            </div>
+            <div class="content-canvas" id="canvasContainer">
+                <canvas id='Ruleta' width='540' height='550'>
+                Canvas not supported, use another browser.
+                </canvas> 
+                <divm class="content-button-reset">
+                    <button class="btn" onclick="resetRuleta()">Resetear</button>
+                </div>
+            </div>
         </div>
+        
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/img/cs-1.jpg" class="d-block w-100" alt="cs-1.jpg">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/cs-2.jpg" class="d-block w-100" alt="cs-2.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cs-3.jpg" class="d-block w-100" alt="cs-3.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cs-4.jpg" class="d-block w-100" alt="cs-4.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cs-5.jpg" class="d-block w-100" alt="cs-5.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cs-6.jpg" class="d-block w-100" alt="cs-6.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cs-7.jpg" class="d-block w-100" alt="cs-7.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cs-8.jpg" class="d-block w-100" alt="cs-8.jpg">
+              </div>
+            </div>
         </div>
     </div>
 </body>

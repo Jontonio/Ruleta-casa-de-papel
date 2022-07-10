@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 /* Estilo general para el canvas */
 .canvas{
@@ -11,6 +12,8 @@
 /* Contenedor principal al canvas */
 .content-canvas{
     display: flex;
+    z-index: 505000;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100% !important;
@@ -19,7 +22,7 @@
 /* contenedor de la mascara  */
 .mask-ruleta{
     position: absolute;
-    width: 98%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,4 +32,53 @@
 .img-mask{
     width: 110px;
     cursor: pointer;
+    margin-top: -65px;
+}
+.content-main{
+    position: absolute;
+    padding-top: 30px;
+    width: 100%;
+    z-index: 10000;
+    height: 100vh;
+    opacity: 0.9;
+    background: #000;
+}
+.carousel{
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+.carousel-inner{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.content-title{
+    position: absolute;
+    z-index: 50000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    height: 50px;
+    margin: 20px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+}
+.middle-text{
+    background: red;
+    font-size: 18px;
+    height: 0px !important;
+    padding: 3px;
+}
+.content-button-reset{
+    z-index: 50000;
+    padding-bottom: 40px !important;
+}
+.btn{
+    border: 1px solid #191919;
 }
