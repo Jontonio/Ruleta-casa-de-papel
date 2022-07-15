@@ -18,6 +18,7 @@
     align-items: center;
     width: 100% !important;
     height: 100vh !important;
+    border: 1px solid;
 }
 /* contenedor de la mascara  */
 .mask-ruleta{
@@ -34,14 +35,12 @@
     cursor: pointer;
     margin-top: -65px;
 }
-.content-main{
+.content-main, .content-main-opacity{
     position: absolute;
     padding-top: 30px;
     width: 100%;
     z-index: 10000;
     height: 100vh;
-    opacity: 0.9;
-    background: #000;
 }
 .carousel{
     margin: 0 !important;
@@ -54,6 +53,7 @@
     height: 100vh;
     width: 100%;
 }
+
 .content-title{
     position: absolute;
     z-index: 50000;
@@ -81,4 +81,10 @@
 }
 .btn{
     border: 1px solid #191919;
+}
+
+/* control de opacidad del content main */
+.content-main-opacity {
+    background-color: #000;
+    opacity: 0.6;
 }
