@@ -9,6 +9,8 @@ let disableButtom = false;
 let distnaciaX = 50;
 let distnaciaY = 50;
 let ctx;
+let divWin1;
+let divWin2;
 // instancia de audio
 let audioRuleta = new Audio('./assets/audio/ruleta.mp3');  // Create audio object and load desired file.
 let audioWin = new Audio('./assets/audio/win.mp3');  // Create audio object and load desired file.
@@ -16,8 +18,16 @@ let audioWin = new Audio('./assets/audio/win.mp3');  // Create audio object and 
 // Falta implementar el mensaje de ganador
 function Mensaje() {
     winningSegment = objRuleta.getIndicatedSegment();
+    showWin(winningSegment.text)
     SonidoFinal();
     winAnimation();
+}
+
+function showWin(text){
+    divWin1 = document.getElementById('take-win1');
+    divWin2 = document.getElementById('take-win2');
+    divWin1.innerText = text;
+    divWin2.innerText = text;
 }
 
 // Dibuja el triangulo que indica el número que toco
@@ -131,8 +141,13 @@ function cargarRuleta() {
                                 'textFontSize' : 25,
                                 'textFillStyle':'#FFFFFF'
                             });
-        DibujarRuleta(ElementosRuleta);
+        DibujarRuleta(shuffleArray(ElementosRuleta));
 } 
+
+// shuffleArray 
+function shuffleArray(inputArray){
+    return inputArray.sort(()=> Math.random() - 0.5);
+}
 
 // funcion win animation
 function winAnimation(){
@@ -156,9 +171,10 @@ function winAnimation(){
 }
 
 function resetRuleta(){
-
     cargarRuleta();
     disableButtom = false;
+    divWin1.innerText = '';
+    divWin2.innerText = '';
 }
 
 // start game 

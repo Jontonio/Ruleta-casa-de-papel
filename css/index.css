@@ -34,7 +34,7 @@
     cursor: pointer;
     margin-top: -65px;
 }
-.content-main{
+.content-main, .content-main-opacity{
     position: absolute;
     padding-top: 30px;
     width: 100%;
@@ -54,6 +54,7 @@
     height: 100vh;
     width: 100%;
 }
+
 .content-title{
     position: absolute;
     z-index: 50000;
@@ -68,6 +69,7 @@
     color: #FFF;
     font-weight: bold;
     font-size: 30px;
+    font-family: 'Fugaz One';
 }
 .middle-text{
     background: red;
@@ -81,4 +83,18 @@
 }
 .btn{
     border: 1px solid #191919;
+}
+
+/* control de opacidad del content main */
+.content-main-opacity {
+    background-color: #000;
+    opacity: 0.6;
+}
+.take-win{
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(rgb(255, 255, 255),rgb(202, 2, 2));
+    font-family: 'Fugaz One', cursive;
+    -webkit-background-clip: text;
+    color: transparent;
 }
