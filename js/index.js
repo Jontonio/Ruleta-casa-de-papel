@@ -55,7 +55,6 @@ function DibujarRuleta(ArregloElementos) {
                 'spins': 15,
                 'callbackFinished': 'Mensaje()',
                 'callbackAfter': 'DibujarTriangulo()' 
-                
             }, 
         
         });
@@ -70,15 +69,7 @@ function cargarRuleta() {
 
         ElementosRuleta.push({ 
                                 'fillStyle': "#C91F37", 
-                                'text': "S/100",
-                                'textOrientation' : 'curved',
-                                'textAligment' : 'center',
-                                'textFontSize' : 25,
-                                'textFillStyle':'#FFFFFF'
-                            });
-        ElementosRuleta.push({ 
-                                'fillStyle': "#DC3023", 
-                                'text': "S/20",
+                                'text': "S/80",
                                 'textOrientation' : 'curved',
                                 'textAligment' : 'center',
                                 'textFontSize' : 25,
@@ -86,14 +77,6 @@ function cargarRuleta() {
                             });
         ElementosRuleta.push({ 
                                 'fillStyle': "#9D2933", 
-                                'text': "S/50",
-                                'textOrientation' : 'curved',
-                                'textAligment' : 'center',
-                                'textFontSize' : 25,
-                                'textFillStyle':'#FFFFFF'
-                            });
-        ElementosRuleta.push({ 
-                                'fillStyle': "#CF000F", 
                                 'text': "S/100",
                                 'textOrientation' : 'curved',
                                 'textAligment' : 'center',
@@ -102,15 +85,7 @@ function cargarRuleta() {
                             });
         ElementosRuleta.push({ 
                                 'fillStyle': "#F22613", 
-                                'text': "S/110",
-                                'textOrientation' : 'curved',
-                                'textAligment' : 'center',
-                                'textFontSize' : 25,
-                                'textFillStyle':'#FFFFFF'
-                            });
-        ElementosRuleta.push({ 
-                                'fillStyle': "#8F1D21",
-                                'text': "S/70",
+                                'text': "S/120",
                                 'textOrientation' : 'curved',
                                 'textAligment' : 'center',
                                 'textFontSize' : 25,
@@ -118,7 +93,23 @@ function cargarRuleta() {
                             });
         ElementosRuleta.push({ 
                                 'fillStyle': "#CF3A24", 
-                                'text': "S/40",
+                                'text': "S/140",
+                                'textOrientation' : 'curved',
+                                'textAligment' : 'center',
+                                'textFontSize' : 25,
+                                'textFillStyle':'#FFFFFF'
+                            });
+        ElementosRuleta.push({ 
+                                'fillStyle': "#CF3A24", 
+                                'text': "S/100",
+                                'textOrientation' : 'curved',
+                                'textAligment' : 'center',
+                                'textFontSize' : 25,
+                                'textFillStyle':'#FFFFFF'
+                            });
+        ElementosRuleta.push({ 
+                                'fillStyle': "#CF3A44", 
+                                'text': "S/90",
                                 'textOrientation' : 'curved',
                                 'textAligment' : 'center',
                                 'textFontSize' : 25,
@@ -126,7 +117,15 @@ function cargarRuleta() {
                             });
         ElementosRuleta.push({ 
                                 'fillStyle': "#9D2933", 
-                                'text': "S/80",
+                                'text': "Subasta",
+                                'textOrientation' : 'curved',
+                                'textAligment' : 'center',
+                                'textFontSize' : 25,
+                                'textFillStyle':'#FFFFFF'
+                            });
+        ElementosRuleta.push({ 
+                                'fillStyle': "#9D2933", 
+                                'text': "S/110",
                                 'textOrientation' : 'curved',
                                 'textAligment' : 'center',
                                 'textFontSize' : 25,
